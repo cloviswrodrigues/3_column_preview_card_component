@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright_orange: hsl(31, 77%, 52%);
+    --dark_cyan: hsl(184, 100%, 22%);
+    --very_dark_cyan: hsl(179, 100%, 13%);
+
+    --transparent_white: hsla(0, 0%, 100%, 0.75);
+    --very_light_gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+.container {
+    background-color: var(--very_light_gray);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--transparent_white);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card {
+    width: 330px;
+    height: 100%;
+    padding: 3.125rem;
+}
+
+.card .top {
+    width: 100%;
+    height: 50px;
+    background-repeat: no-repeat;
+}
+
+.card .content h1 {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-family: Big Shoulders Display, sans-serif;
+    font-weight: 700;
+    margin: 1.8rem 0;    
+    color: var(--very_light_gray);
+}
+
+.card .content p {
+    font-family: Lexend Deca, sans-serif;
+    font-weight: 0;
+    line-height: 1.8rem;
+}
+
+.card button {    
+    border: 2px solid var(--very_light_gray);
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    padding: .9rem 2rem;
+    font-family: Lexend Deca, sans-serif;
+}   
+
+.sedans {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--bright_orange);
+}
+
+.sedans .top {
+    background-image: url(../assets/icon-sedans.svg);
+}
+
+.suvs {
+    background-color: var(--dark_cyan);
+}
+
+.suvs .top {
+    background-image: url(../assets/icon-suvs.svg);
+}
+
+.luxury {
+    background-color: var(--very_dark_cyan);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.luxury .top {
+    background-image: url(../assets/icon-luxury.svg);
+}
+
+.btn-orange {
+    color: var(--bright_orange);
+}
+
+.btn-orange:hover {
+    background-color: var(--bright_orange);
+    color: var(--very_light_gray);
+}
+
+.btn-cyan {
+    color: var(--dark_cyan);
+}
+
+.btn-cyan:hover {
+    background-color: var(--dark_cyan);
+    color: var(--very_light_gray);
+}
+
+.btn-very-dark-cyan {
+    color: var(--very_dark_cyan);
+}
+
+.btn-very-dark-cyan:hover {
+    background-color: var(--very_dark_cyan);
+    color: var(--very_light_gray);
+}
